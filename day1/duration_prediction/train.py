@@ -1,15 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
-
-
-get_ipython().system('python -V')
-
-
-# In[2]:
-
-
 import pandas as pd
 
 import seaborn as sns

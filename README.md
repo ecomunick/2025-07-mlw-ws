@@ -45,22 +45,22 @@ juts run `curl -LsSf https://astral.sh/uv/install.sh | sh`
     - `/workspaces/2025-07-mle-workshop/day_1/.venv/bin/python`
 
 - remove # lines from script
-
 - move imports all to top
-
 - remove top level statements
-
 - improve code
-
-- we can run it via uv run python duration_prediction/train.py
-
+- we can run it via `uv run python duration_prediction/train.py`
 - parametrize the train function
-
-- use argparse: now we can call it via uv run python duration_prediction/train.py --train-date 2022-01 --val-date 2022-02 --model-save-path out_file.np
-
+- use argparse: now we can call it via `uv run python duration_prediction/train.py --train-date 2022-01 --val-date 2022-02 --model-save-path out_file.np`
 - add docstrings to functions
+- logging: `uv add loguru`
+- split out argparse into main.py and make it a module. now we call our code via `uv run python -m duration_prediction.main --train-date 2022-01 --val-date 2022-02 --model-save-path out_file.np`
 
-- logging: uv add loguru
+### create a makefile
+now we can run our training via make train
 
-- split out argparse into main.py and make it a module. now we call our code via uv run python -m duration_prediction.main --train-date 2022-01 --val-date 2022-02 --model-save-path out_file.np
-
+## tests
+    - `uv add pytest`
+    -  `mkdir tests`
+    - create a `__init__.py` file inside of tests
+    - create a file `test_train.py` inside of `tests` (it has to start with `test_`)
+    - run tests via `uv run pytest` or `make test`

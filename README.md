@@ -33,5 +33,10 @@ juts run `curl -LsSf https://astral.sh/uv/install.sh | sh`
 ##### control + c to close jupyet notebook in terminal #### 
 
 ### convert notebook into a script
-- `uv run jupyter nbconvert --to=script /workspaces/2025-07-mlw-ws/day1/duration-prediction-starter.ipynb`
-- create a new folder `duration_prediction` and move the file `duration-prediction-starter.py`into that folder and rename it to train.py
+- `uv run jupyter nbconvert --to=script notebooks/duration-prediction-starter.ipynb`
+- create a new folder `duration_prediction` and move the file `duration-prediction-starter.py`into that folder and rename it into `train.py`
+
+### lets make the train.py script nice
+
+
+

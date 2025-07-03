@@ -22,9 +22,16 @@ juts run `curl -LsSf https://astral.sh/uv/install.sh | sh`
 - `wget "https://raw.githubusercontent.com/alexeygrigorev/ml-engineering-contsructor-workshop/refs/heads/main/01-train/duration-prediction-starter.ipynb"`
 - `cd .. `  
 
-## install dependencies
+### install dependencies
 - uv add scikit-learn==1.2.2 pandas pyarrow
 - fix issue with numpy via `uv add numpy==1.26.4`
 - install jupyter `uv add --dev jupyter seaborn`
 
+### launch jupyetr notebook
+`uv run jupyter notebook`
 
+##### control + c to close jupyet notebook in terminal #### 
+
+### convert notebook into a script
+- `uv run jupyter nbconvert --to=script /workspaces/2025-07-mlw-ws/day1/duration-prediction-starter.ipynb`
+- create a new folder `duration_prediction` and move the file `duration-prediction-starter.py`into that folder and rename it to train.py

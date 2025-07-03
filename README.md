@@ -37,6 +37,15 @@ juts run `curl -LsSf https://astral.sh/uv/install.sh | sh`
 - create a new folder `duration_prediction` and move the file `duration-prediction-starter.py`into that folder and rename it into `train.py`
 
 ### lets make the train.py script nice
+- install python vs code 
+- make vscode use correct python version:
+    - click bottom right
+    - enter interpreter path
+    - find 
+    - `/workspaces/2025-07-mle-workshop/day_1/.venv/bin/python`
 
+- remove # lines from script
+
+- move imports all to top
 
 

@@ -86,3 +86,7 @@ now we can run our training via make train
 
 ### implement serve
 - run it via `uv run python src/duration_pred_serve/serve.py`
+- test it via insomnia or via `uv run python integration-tests/predict-test.py`
+- created the make commands:
+    - `make run` for running the server
+    - `make predict-test` for testing it (needs to be run in a separate terminal)

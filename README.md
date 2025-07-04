@@ -65,3 +65,22 @@ now we can run our training via make train
 - create a file `test_train.py` inside of `tests` (it has to start with `test_`)
 - run tests via `uv run pytest` or `make test`
 
+
+## day2
+
+### create project and add dependecies
+
+- create a day2 folder and we will work from within it: `mkdir day2 && cd day2`
+- create a new project `uv init --lib --python 3.10 duration_pred_serve``
+- change dir into it via `cd duration_pred_serve`
+- add dependencies from day1 to ptoject via `uv add scikit-learn==1.2.2 numpy==1.26.4`
+- add flask (webserver) and pytest(testing): `uv add flask pytest`
+- add requests (making web requests for testing) `uv add --dev requests`
+- add loguru for logs: `uv add loguru`
+- copy over model from day1 into a new folder `models`
+
+
+### ping example
+- we can do programatically using the command: `touch src/duration_pred_Serve/ping.py`
+- run it via `uv run python src/duration_pred_serve/ping.py`
+
